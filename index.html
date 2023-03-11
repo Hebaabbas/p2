@@ -8,14 +8,14 @@
     <!-- google fonts Libre Bodoni italic font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap" rel="stylesheet">"
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <h1 class="heading">
-        <img class="brain" src="assets/images/brain.webp" alt="brain"> Test My Knowledge!
+         <img class="brain" src="assets/images/brain.webp" alt="brain"> Test My Knowledge!
     </h1>
     <div class="questions-area">
         <p>Question level 1: Brazil is the biggest producer of?</p>
@@ -58,12 +58,13 @@
         <input id="diamond-radio" name="substance"value="diamond" type="radio">
         <label for="diamond-radio">Diamond</label>
         <br>
-       <button class="btn btn--red">Submit My Answers.</button>
+        <br>
+        <button data-type="submit" class="btn">Submit My Answers.</button>
 
     </div>
     <div class="score-area">
-        <p class="scores">Points Earned<span id="right">0</span></p>
-        <p class="scores">Points Lost<span id="wrong">0</span></p>
+        <p class="scores">Correct Points : <span id="right">0</span></p>
+        <p class="scores">Incorrect Points: <span id="wrong">0</span></p>
 
     </div>
     <script src="assets/js/script.js"></script>

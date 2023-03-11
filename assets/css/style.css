@@ -1,0 +1,49 @@
+body{
+   background-color: rgb(3, 3, 27);
+   font-family:'Libre Bodoni', serif;
+   color: aliceblue;
+   text-align: center;
+}
+.heading {
+    text-align: center;
+    font-size: 3rem ;
+    padding: 0 0 0.2em;
+    
+}
+.brain {
+        height: 60px;
+        padding-right: 10px;
+}
+.questions-area{
+    width: 60%;
+    font-size: 1rem;
+    margin: auto;
+    padding: 50px 0;
+    background: url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzEwMjJkYjJhLTlkMzQtNGFjNC04NWQxLWM3YTk1Y2IyMzA4NC0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoiMTIwMCJ9fX0=)center center / cover no-repeat fixed;
+}
+.score-area {
+    margin: 5px auto;
+    width: 50%;
+    font-size: 1rem;
+}
+#right {
+    color: rgb(108, 176, 236);
+    font-weight: bold;
+}
+#wrong {
+    color: red;
+    font-weight: bold;
+}
+.scores {
+    display: inline-block;
+    padding: 30px;
+}
+.btn {
+    border-color: rgb(108, 176, 236);
+    color:rgb(108, 176, 236);
+}
+.btn:active,
+.btn:hover {
+    background-color: rgb(108, 176, 236);
+    color: white;
+}
