@@ -4,69 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- google fonts Libre Bodoni italic font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <script src="assets/js/script.js"></script>
+
+    <title>Academic article</title>
 </head>
 <body>
     <h1 class="heading">
-         <img class="brain" src="assets/images/brain.webp" alt="brain"> Test My Knowledge!
+         <img class="brain" src="assets/images/brain.webp" alt="brain"> Students Zone
     </h1>
-    <div class="questions-area">
-        <p>Question level 1: Brazil is the biggest producer of?</p>
-        <input id="rice-radio" name="production" value="rice" type="radio">
-        <label for="rice-radio">Rice</label>
-        <input id="oil-radio" name="production" value="oil" type="radio">
-        <label for="oil-radio">Oil</label>
-        <input id="coffee-radio" name="production" value="coffee" type="radio">
-        <label for="coffee-radio">Coffee</label>
+    <div class="information">
+        <h2>This wesbite offers a random quiz to test the student's reading skills based on an article of our choice.</h2>
+        <h2>The article of our choice can be used in IELTS tests. A sample Academic Reading:</h2>
+        <article>
+            <p>[Note: This is an extract from a Part 1 text about older people in the workforce.] </p>
+            <p>
+            The general assumption is that older workers are paid more in spite of, rather than because
+            of, their productivity. That might partly explain why, when employers are under pressure to
+            cut costs, they persuade a 55-year old to take early retirement. Take away seniority-based
+            pay scales, and older workers may become a much more attractive employment proposition.
+            But most employers and many workers are uncomfortable with the idea of reducing
+            someone’s pay in later life – although manual workers on piece-rates often earn less as they
+            get older. So retaining the services of older workers may mean employing them in different
+            ways.
+            </p>
+            <p>
+            One innovation was devised by IBM Belgium. Faced with the need to cut staff costs, and
+            having decided to concentrate cuts on 55 to 60-year olds, IBM set up a separate company
+            called Skill Team, which re-employed any of the early retired who wanted to go on working
+            up to the age of 60. An employee who joined Skill Team at the age of 55 on a five-year
+            contract would work for 58% of his time, over the full period, for 88% of his last IBM salary.
+            The company offered services to IBM, thus allowing it to retain access to some of the
+            intellectual capital it would otherwise have lost.
+            </p>
+            <p>
+            The best way to tempt the old to go on working may be to build on such ‘bridge’ jobs: parttime or temporary employment that creates a more gradual transition from full-time work to
+            retirement. Studies have found that, in the United States, nearly half of all men and women
+            who had been in full-time jobs in middle age moved into such ‘bridge’ jobs at the end of their
+            working lives. In general, it is the best-paid and worst-paid who carry on working. There
+            seem to be two very different types of bridge job-holder – those who continue working
+            because they have to and those who continue working because they want to, even though
+            they could afford to retire.
+            </p>
+            <p>
+            If the job market grows more flexible, the old may find more jobs that suit them. Often, they
+            will be self-employed. Sometimes, they may start their own businesses: a study by David
+            Storey of Warwick University found that in Britain 70% of businesses started by people over
+            55 survived, compared with an overall national average of only 19%. But whatever pattern of
+            employment they choose, in the coming years the skills of these ‘grey workers’ will have to
+            be increasingly acknowledged and rewarded.
+            </p>
 
-        <p>Question level 2: Which is the closest planet to earth?</p>
-        <input id="mars-radio" name="planet" value="mars" type="radio">
-        <label for="mars-radio">Mars</label>
-        <input id="jupiter-radio" name="planet" value="jupiter" type="radio">
-        <label for="jupiter-radio">Jupiter</label>
-        <input id="satum-radio" name="planet" value="satum" type="radio">
-        <label for="satum-radio">Satum</label>
+        </article>
 
-        <p>Question level 3: What color dresses do Chinese women traditionally wear on their wedding day?</p>
-        <input id="red-radio" name="color" value="red" type="radio">
-        <label for="red-radio">Red</label>
-        <input id="white-radio" name="color" value="white" type="radio">
-        <label for="white-radio">White</label>
-        <input id="blue-radio" name="color" value="blue" type="radio">
-        <label for="blue-radio">Blue</label>
-
-        <p>Question level 4: Which sea creature has three hearts?</p>
-        <input id="shark-radio" name="fish" value="shark" type="radio">
-        <label for="shark-radio">Shark</label>
-        <input id="jellyfish-radio" name="fish" value="jellyfish" type="radio">
-        <label for="jellyfish-radio">Jellyfish</label>
-        <input id="octopus-radio" name="fish" value="octopus" type="radio">
-        <label for="octopus-radio">Octopus</label>
-
-        <p>Question level 5: What is the hardest natural substance in the world?</p>
-        <input id="marble-radio" name="substance" value="marble" type="radio">
-        <label for="marble-radio">Marble</label>
-        <input id="iron-radio" name="substance" value="iron" type="radio">
-        <label for="iron-radio">Iron</label>
-        <input id="diamond-radio" name="substance"value="diamond" type="radio">
-        <label for="diamond-radio">Diamond</label>
-        <br>
-        <br>
-        <button data-type="submit" class="btn">Submit My Answers.</button>
-
+        <button onclick="openQuestionsPage()">Start Quiz</button>
     </div>
-    <div class="score-area">
-        <p class="scores">Correct Points : <span id="right">0</span></p>
-        <p class="scores">Incorrect Points: <span id="wrong">0</span></p>
-
-    </div>
-    <script src="assets/js/script.js"></script>
 </body>
+<footer>
+    <p>This test is taken from <a href="www.ieltsjacky.com" target="_blank" rel="noopener" style="font-weight: bold; color: white;;">IELTS Jacky</a></p>
+</footer>
 </html>

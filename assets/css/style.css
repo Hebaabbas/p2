@@ -1,49 +1,113 @@
-body{
-    background-color: rgb(3, 3, 27);
-    font-family:'Libre Bodoni', serif;
-    color: aliceblue;
+body {
+  background-image: url('../images/smart.jpeg');
+  font-family: 'Libre Bodoni', serif;
+    color: white;
     text-align: center;
- }
- .heading {
-     text-align: center;
-     font-size: 3rem ;
-     padding: 0 0 0.2em;
-     
- }
- .brain {
-         height: 60px;
-         padding-right: 10px;
- }
- .questions-area{
-     width: 60%;
-     font-size: 1rem;
-     margin: auto;
-     padding: 50px 0;
-     background: url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzEwMjJkYjJhLTlkMzQtNGFjNC04NWQxLWM3YTk1Y2IyMzA4NC0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoiMTIwMCJ9fX0=)center center / cover no-repeat fixed;
- }
- .score-area {
-     margin: 5px auto;
-     width: 50%;
-     font-size: 1rem;
- }
- #right {
-     color: rgb(108, 176, 236);
-     font-weight: bold;
- }
- #wrong {
-     color: red;
-     font-weight: bold;
- }
- .scores {
-     display: inline-block;
-     padding: 30px;
- }
- .btn {
-     border-color: rgb(108, 176, 236);
-     color:rgb(108, 176, 236);
- }
- .btn:active,
- .btn:hover {
-     background-color: rgb(108, 176, 236);
-     color: white;
- }
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 0 0.2em;
+}
+
+.brain {
+    height: 60px;
+    padding-right: 10px;
+}
+
+.information, .questions-area, .answers {
+  width: 60%;
+  font-size: 1rem;
+  margin: auto;
+  padding: 50px 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: black center center / cover no-repeat fixed;
+  text-align: left;
+  
+}
+article{
+  font-size: medium;
+  text-align: left;
+}
+
+
+
+h2{text-align: center;}
+
+.score-area {
+    margin: 5px auto;
+    width: 50%;
+    font-size: 1rem;
+}
+
+#right {
+    color: white;
+    font-weight: bold;
+}
+
+#wrong {
+    color: red;
+    font-weight: bold;
+}
+
+.scores {
+    display: inline-block;
+    padding: 30px;
+}
+
+.btn {
+    border-color: rgb(108, 176, 236);
+    color: rgb(108, 176, 236);
+}
+
+.btn:active,
+.btn:hover {
+    background-color: rgb(108, 176, 236);
+    color: white;
+}
+/* Styles for screens smaller than 650px */
+@media screen and (max-width: 768px) {
+
+    body {
+      font-size: 18px;
+    }
+    #logo {
+      font-size: 25px;
+    }
+    #menu, #logo {
+      line-height: 40px;
+    }
+    #cakes div, #cupcakesandcoockies div {
+      width: 100%;
+    }
+  }
+    /* Styles for screens between 768px and 1023px */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      body {
+        font-size: 18px;
+      }
+      #logo {
+        font-size: 35px;
+      }
+      #cakes div, #cupcakesandcoockies div {
+        width: 20%;
+      }
+    }
+    
+    /* Styles for screens larger than 1024px */
+    @media screen and (min-width: 1024px) {
+  
+      
+      body {
+        font-size: 20px;
+      }
+      #logo {
+        font-size: 40px;
+      }
+      #cakes div, #cupcakesandcoockies div {
+        width: 20%;
+      }
+    }
