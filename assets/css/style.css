@@ -21,7 +21,7 @@ body {
   width: 60%;
   font-size: 1rem;
   margin: auto;
-  padding: 50px 0;
+  padding: 30px 0;
   padding-left: 5%;
   padding-right: 5%;
   background: black center center / cover no-repeat fixed;
@@ -70,18 +70,18 @@ h2{text-align: center;}
 }
 /* Styles for screens smaller than 650px */
 @media screen and (max-width: 768px) {
+  h2{
+    font-size: 18px;
+  }
 
     body {
       font-size: 18px;
     }
-    #logo {
-      font-size: 25px;
+    .heading {
+      font-size: 30px;
     }
-    #menu, #logo {
-      line-height: 40px;
-    }
-    #cakes div, #cupcakesandcoockies div {
-      width: 100%;
+    .information , .questions-area , .answers{
+      width: 85%;
     }
   }
     /* Styles for screens between 768px and 1023px */
@@ -89,11 +89,11 @@ h2{text-align: center;}
       body {
         font-size: 18px;
       }
-      #logo {
-        font-size: 35px;
+      .information , .questions-area , .answers {
+        width: 80%;
       }
-      #cakes div, #cupcakesandcoockies div {
-        width: 20%;
+      .heading {
+        font-size: 40px;
       }
     }
     
@@ -104,10 +104,10 @@ h2{text-align: center;}
       body {
         font-size: 20px;
       }
-      #logo {
-        font-size: 40px;
+      .heading {
+        font-size: 45px;
       }
-      #cakes div, #cupcakesandcoockies div {
-        width: 20%;
+      .information , .questions-area , .answers {
+        width: 80%;
       }
     }
