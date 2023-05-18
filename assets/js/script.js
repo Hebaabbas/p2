@@ -9,25 +9,29 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// This variable keeps track of the index number of the question that is being shown.
 let currentQuestionIndex = 0;
+// This varible keeps the count of the right answers stored.
 let rightAnswers = 0;
+// This varible keeps the count of the wrong answers stored.
 let wrongAnswers = 0;
-let testSubmitted = false; // Variable to track if the test has been submitted
+// Variable is to track if the test has been submitted.
+let testSubmitted = false;
 
+// This function directs the user to the question.html page.
 function openQuestionsPage() {
   window.location.href = "questions.html";
 }
-
+// This function is called when the user clicks on the "Next Question" button which directs the user to the next question.
 function nextQuestion() {
   if (testSubmitted) {
-    return; // Do nothing if the test is already submitted
+    return; 
   }
-
   const questions = document.getElementsByClassName("question");
   const submitButton = document.getElementById("submit-button");
   const nextButton = document.getElementById("next-button");
 
-  const currentQuestion = questions[currentQuestionIndex]; // Retrieve the current question element
+  const currentQuestion = questions[currentQuestionIndex]; 
 
   currentQuestion.style.display = "none";
 
@@ -36,16 +40,16 @@ function nextQuestion() {
     questions[currentQuestionIndex].style.display = "block";
   }
 
-  // Show/hide buttons based on the current question index
+  // This function is to show or hide buttons based on the current question index
   if (currentQuestionIndex === questions.length - 1) {
     submitButton.style.display = "block";
     nextButton.style.display = "none";
   }
 }
-
+// This function is to called when the user clicks on the "Submit my answers" button.
 function submitAnswers() {
   if (testSubmitted) {
-    return; // Do nothing if the test is already submitted
+    return; 
   }
 
   // Question 1
@@ -84,35 +88,26 @@ function submitAnswers() {
     wrongAnswers++;
   }
 
-  // Update the scores on the HTML page
+  // Update the wrong and right points on the HTML page
   document.getElementById('right').textContent = rightAnswers.toString();
   document.getElementById('wrong').textContent = wrongAnswers.toString();
 
   testSubmitted = true; // Set the testSubmitted flag to true
-
-  // Disable the radio buttons to prevent further changes
-  const questions = document.getElementsByClassName("question");
-  for (let i = 0; i < questions.length; i++) {
-    const options = questions[i].getElementsByTagName("input");
-    for (let j = 0; j < options.length; j++) {
-      options[j].disabled = true;
-    }
-  }
 }
-
+// This function returns the answer of each question and will return null incase no answer was selected. 
 function getSelectedAnswer(question) {
   for (let i = 0; i < question.length; i++) {
     if (question[i].checked) {
       return question[i].value;
     }
   }
-  return null; // Return null if no answer is selected
+  return null; 
 }
-
+// This function will redirect the user to the "index.html" page.
 function goToArticlePage() {
   window.location.href = "index.html";
 }
-
+// This function will redirect the user to the "answers.html" page.
 function goToRightAnswers() {
   window.location.href = "answers.html";
 }
