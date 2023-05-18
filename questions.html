@@ -16,50 +16,57 @@
         <img class="brain" src="assets/images/brain.webp" alt="brain"> Welcome! The test starts now:
    </h1>
     <div class="questions-area">
-        <p>Question 1: In paragraph one, the writer suggests that companies could consider:</p>
-        <input id="q1-1-radio" name="q1" value="q1-1" type="radio">
-        <label for="q1-1-radio">Abolishing pay schemes that are based on age.</label>
-        <br>
-        <input id="q1-2-radio" name="q1" value="q1-2" type="radio">
-        <label for="q1-2-radio">Avoiding pay that is based on piece-rates.</label>
-        <br>
-        <input id="q1-3-radio" name="q1" value="q1-3" type="radio">
-        <label for="q1-3-radio">Increasing pay for older workers.</label>
+        <div id="question1" class="question">
+            <p>Question 1: In paragraph one, the writer suggests that companies could consider:</p>
+            <input id="q1-1-radio" name="q1" value="q1-1" type="radio">
+            <label for="q1-1-radio">Abolishing pay schemes that are based on age.</label>
+            <br>
+            <input id="q1-2-radio" name="q1" value="q1-2" type="radio">
+            <label for="q1-2-radio">Avoiding pay that is based on piece-rates.</label>
+            <br>
+            <input id="q1-3-radio" name="q1" value="q1-3" type="radio">
+            <label for="q1-3-radio">Increasing pay for older workers.</label>
+        </div>
         
+        <div id="question2" class="question" style="display: none;">
+            <p>Question 2: Skill Team is an example of a company which: </p>
+            <input id="q2-1-radio" name="q2" value="q2-1" type="radio">
+            <label for="q2-1-radio">Offers older workers increases in salary.</label>
+            <br>
+            <input id="q2-2-radio" name="q2" value="q2-2" type="radio">
+            <label for="q2-2-radio">Allows people to continue working for as long as they want.</label>
+            <br>
+            <input id="q2-3-radio" name="q2" value="q2-3" type="radio">
+            <label for="q2-3-radio">Allows the expertise of older workers to be put to use.</label>
+        </div>
 
-        <p>Question 2: Skill Team is an example of a company which: </p>
-        <input id="q2-1-radio" name="q2"value="q2-1" type="radio">
-        <label for="q2-1-radio">Offers older workers increases in salary.</label>
-        <br>
-        <input id="q2-2-radio" name="q2" value="q2-2" type="radio">
-        <label for="q2-2-radio">Allows people to continue working for as long as they want.</label>
-        <br>
-        <input id="q2-3-radio" name="q2" value="q2-3" type="radio">
-        <label for="q2-3-radio">Allows the expertise of older workers to be put to use.</label>
-       
+        <div id="question3" class="question" style="display: none;">
+            <p>Question 3: According to the writer, ‘bridge’ jobs:</p>
+            <input id="q3-1-radio" name="q3" value="q3-1" type="radio">
+            <label for="q3-1-radio">Tend to attract people in middle-salary ranges.</label>
+            <br>
+            <input id="q3-2-radio" name="q3" value="q3-2" type="radio">
+            <label for="q3-2-radio">Are better paid than some full-time jobs.</label>
+            <br>
+            <input id="q3-3-radio" name="q3" value="q3-3" type="radio">
+            <label for="q3-3-radio">Appeal to distinct groups of older workers.</label>
+        </div>
 
-        <p>Question 3: According to the writer, ‘bridge’ jobs:</p>
-        <input id="q3-1-radio" name="q3" value="q3-1" type="radio">
-        <label for="q3-1-radio">Tend to attract people in middle-salary ranges.</label>
-        <br>
-        <input id="q3-2-radio" name="q3" value="q3-2" type="radio">
-        <label for="q3-2-radio">Are better paid than some full-time jobs.</label>
-        <br>
-        <input id="q3-3-radio" name="q3" value="q3-3" type="radio">
-        <label for="q3-3-radio">Appeal to distinct groups of older workers.</label>
-
-        <p>Question 4: David Storey’s study found that:</p>
-        <input id="q4-1-radio" name="q4" value="q4-1" type="radio">
-        <label for="q4-1-radio">People demand more from their work as they get older.</label>
-        <br>
-        <input id="q4-2-radio" name="q4" value="q4-2" type="radio">
-        <label for="q4-2-radio">Older people are good at running their own businesses.</label>
-        <br>
-        <input id="q4-3-radio" name="q4" value="q4-3" type="radio">
-        <label for="q4-3-radio">An increasing number of old people are self-employed.</label>
+        <div id="question4" class="question" style="display: none;">
+            <p>Question 4: David Storey’s study found that:</p>
+            <input id="q4-1-radio" name="q4" value="q4-1" type="radio">
+            <label for="q4-1-radio">People demand more from their work as they get older.</label>
+            <br>
+            <input id="q4-2-radio" name="q4" value="q4-2" type="radio">
+            <label for="q4-2-radio">Older people are good at running their own businesses.</label>
+            <br>
+            <input id="q4-3-radio" name="q4" value="q4-3" type="radio">
+            <label for="q4-3-radio">An increasing number of old people are self-employed.</label>
+        </div>
         <br>
         <br>
-        <button data-type="submit" class="btn">Submit My Answers.</button>
+        <button id="next-button" type="button" onclick="nextQuestion()">Next question</button>
+        <button id="submit-button" type="button" data-type="submit" onclick="submitAnswers()" style="display: none;">Submit my answer</button>
 
     </div>
     <div class="score-area">
@@ -69,12 +76,6 @@
         <button onclick="goToArticlePage()">Go back to the article</button>
         <button onclick="goToRightAnswers()">See the right answers</button>
 
-
-
     </div>
-
-
-
-
 </body>
 </html>

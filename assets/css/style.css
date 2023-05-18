@@ -73,6 +73,9 @@ h2{text-align: center;}
   h2{
     font-size: 18px;
   }
+  h3{
+    font-size: 18px;
+  }
 
     body {
       font-size: 18px;
@@ -86,6 +89,9 @@ h2{text-align: center;}
   }
     /* Styles for screens between 768px and 1023px */
     @media screen and (min-width: 768px) and (max-width: 1023px) {
+      h3{
+        font-size: 18px;
+      }
       body {
         font-size: 18px;
       }
@@ -99,8 +105,9 @@ h2{text-align: center;}
     
     /* Styles for screens larger than 1024px */
     @media screen and (min-width: 1024px) {
-  
-      
+      h3{
+        font-size: 20px;
+      }
       body {
         font-size: 20px;
       }
